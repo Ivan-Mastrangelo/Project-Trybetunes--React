@@ -1,6 +1,6 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import Loading from './Loading';
+import Loading from '../components/Loading';
 import { createUser } from '../services/userAPI';
 
 class Login extends React.Component {
@@ -43,7 +43,8 @@ class Login extends React.Component {
   //   }
   // }
 
-  userSubmit() {
+  userSubmit(event) {
+    event.preventDefault();
     const { loginName } = this.state;
     this.setState({ loading: true }, () => {
       createUser({ name: loginName })
