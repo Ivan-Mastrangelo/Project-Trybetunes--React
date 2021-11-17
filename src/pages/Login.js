@@ -60,7 +60,7 @@ class Login extends React.Component {
     return (
       <div data-testid="page-login">
         <form>
-          <lable htmlFor="nameLogin">
+          <label htmlFor="nameLogin">
             Nome:
             <input
               type="text"
@@ -70,7 +70,7 @@ class Login extends React.Component {
               onChange={ this.onInputChange }
               data-testid="login-name-input"
             />
-          </lable>
+          </label>
           <button
             type="submit"
             data-testid="login-submit-button"
