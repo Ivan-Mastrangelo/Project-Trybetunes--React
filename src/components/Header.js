@@ -35,11 +35,11 @@ class Header extends React.Component {
       <header data-testid="header-component">
         TrybeTunes
         {loading ? <Loading /> : <h3 data-testid="header-user-name">{loginName}</h3>}
-        <div>
+        <nav>
           <Link to="/search" data-testid="link-to-search">Search </Link>
           <Link to="/favorites" data-testid="link-to-favorites">Favorites </Link>
           <Link to="/profile" data-testid="link-to-profile">Profile</Link>
-        </div>
+        </nav>
       </header>
     );
   }
