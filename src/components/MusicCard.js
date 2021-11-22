@@ -1,18 +1,35 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Loading from './Loading';
-import { addSong } from '../services/favoriteSongsAPI';
+import { addSong, getFavoriteSongs } from '../services/favoriteSongsAPI';
 
 class MusicCard extends React.Component {
   constructor() {
     super();
 
     this.addTrackToFavorite = this.addTrackToFavorite.bind(this);
+    this.setPreviusFavoriteSongs = this.setPreviusFavoriteSongs.bind(this);
 
     this.state = {
       favoriteCheck: false,
       loading: false,
     };
+  }
+
+  componentDidMount() {
+    this.setPreviusFavoriteSongs();
+  }
+
+  async setPreviusFavoriteSongs() {
+    const { tracks: { trackId } } = this.props;
+    // this.setState({ loading: true });
+    const favoriteSongs = await getFavoriteSongs();
+    // console.log(favoriteSongs);
+    favoriteSongs.some((song) => song.trackId === trackId
+      && this.setState({
+        favoriteCheck: true,
+        // loading: false,
+      }));
   }
 
   async addTrackToFavorite() {
