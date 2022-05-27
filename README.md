@@ -2,7 +2,7 @@
 
 Este projeto, desenvolvido em React, faz parte das avaliações do curso de desenvolvimento de software da escola Trybe. Nele foi solicitado a criação de um pequeno app de músicas ao estilo do itunes.
 
-# Desenvolvimento
+## Desenvolvimento
 
 Diferente dos projetos anteriores, desenvolvidos em React, neste as funcionalidades do app foram agrupadas e organizadas em rotas, além de seguir com a prática do uso de múltiplos componentes. Também se fez uso dos métodos de ciclo de vida (lifecycle methods) e de estados para controlar o que é renderizado por seus componentes dependendo do momento em que as requisições se encontram.
 
@@ -20,7 +20,7 @@ Neste projeto solicitou-se criar o TrybeTunes, uma aplicação capaz de reproduz
 
   Outra diferença importante neste projeto em relação aos anteriores é que foi utilizado o método de consumo e envio de dados de e para APIs, para pesquisar a banda ou artista, recuperar as músicas de cada álbum e salvar as músicas favoritas, além de editar as informações da pessoa logada. Dessa forma tive que lidar com requisições assíncronas e promises. Para emular estes comportamentos a Trybe disponibilizou a pasta service, que contém os arquivos `favoriteSongsAPI.js`, `searchAlbumsAPI.js`, `userAPI.js` e `musicsAPI.js`. Esses arquivos são responsáveis por lidar com as requisições simuladas que foram usadas durante o desenvolvimento.
 
-# Habilidades desenvolvidas neste projeto
+## Habilidades desenvolvidas neste projeto
 
   * Fazer requisições e consumir dados vindos de uma `API`;
 
