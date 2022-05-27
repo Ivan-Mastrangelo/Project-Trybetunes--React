@@ -41,6 +41,7 @@ Neste projeto solicitou-se criar o TrybeTunes, uma aplicação capaz de reproduz
 ## Observações
 
 Assim como a pasta service, os arquivivos index.js, .gitignore, .env, .eslintignore, .eslintrc.json, .stylelintignore, .stylelintrc.json foram fornecidos prontos pela escola.
+
 ---
 
 
