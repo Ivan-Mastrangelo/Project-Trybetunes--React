@@ -42,6 +42,29 @@ Neste projeto solicitou-se criar o TrybeTunes, uma aplicação capaz de reproduz
 
 Assim como a pasta service, os arquivivos index.js, .gitignore, .env, .eslintignore, .eslintrc.json, .stylelintignore, .stylelintrc.json foram fornecidos prontos pela escola.
 
+### Para executá-lo localmente
+
+Basta clonar o projeto:
+```
+git@github.com:Ivan-Mastrangelo/Project-Trybetunes--React.git
+```
+Entrar no diretório criado:
+```
+  cd Project-Trybetunes--React
+  ```
+Instalar as dependências do projeto:
+```
+  npm install
+  ```
+E iniciar o servidor:
+```
+  npm run start
+  ```
+Após esses comandos, acesse no navegador:
+```
+  http://localhost:3000/
+  ```
+
 ---
 
 
